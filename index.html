@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiel Dioyo's Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        .profile-pic {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px double #0d47a1;
+            background: linear-gradient(135deg, #42a5f5, #0d47a1);
+            padding: 5px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #1565c0;
+            margin-bottom: 30px;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #0d47a1;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0d47a1;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        ul li::before {
+            content: '\2714';
+            color: #0d47a1;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .fancy-line {
+            height: 4px;
+            background: linear-gradient(to right, #42a5f5, #0d47a1);
+            border-radius: 5px;
+            margin: 25px 0;
+        }
+        .personal-info p {
+            margin-bottom: 5px;
+        }
+        .highlight {
+            color: #0d47a1;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                top: 10px;
+                right: 10px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-pic {
+                position: static;
+                margin: 0 auto 20px;
+                display: block;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="./nigermiel.png" alt="Profile Picture" class="profile-pic">
+        <h1>Amiel Dioyo</h1>
+        <div class="personal-info section">
+            <h2 class="section-title">Personal Information</h2>
+            <p><span class="highlight">Full Name:</span> Amiel Bravante Dioyo</p>
+            <p><span class="highlight">Address:</span> San Benito, Alaminos, Laguna</p>
+            <p><span class="highlight">Email:</span> amieldioyo96@gmail.com</p>
+            <p><span class="highlight">Phone Number:</span> 09998999801</p>
+        </div>
+
+        <div class="fancy-line"></div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <p><span class="highlight">College:</span> Pamantasan ng Lungsod ng San Pablo (2022 - present)</p>
+            <p>Brgy. San Jose, San Pablo City, Laguna</p>
+
+            <p><span class="highlight">Senior High School:</span> Alaminos Integrated National High School (2020 - 2022)</p>
+            <p>D. Fandino Street, Alaminos, Philippines</p>
+
+            <p><span class="highlight">Junior High School:</span> Col. Lauro D. Dizon Integrated National High School (2016 - 2020)</p>
+            <p>Mabini-Dizon St., Brgy. VI-A, San Pablo City, Laguna</p>
+
+            <p><span class="highlight">Elementary:</span> San Benito Elementary School (2009 - 2016)</p>
+            <p>Brgy. San Benito, Alaminos, Laguna</p>
+        </div>
+
+        <div class="fancy-line"></div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Good Listener</li>
+                <li>Hardworking</li>
+                <li>Computer Skills</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+
+        <div class="fancy-line"></div>
+
+        <div class="section">
+            <h2 class="section-title">Personal Details</h2>
+            <p><span class="highlight">Date of Birth:</span> September 14, 2003</p>
+            <p><span class="highlight">Place of Birth:</span> Brgy. San Benito, Alaminos, Laguna</p>
+            <p><span class="highlight">Age:</span> 19</p>
+            <p><span class="highlight">Gender:</span> Male</p>
+            <p><span class="highlight">Civil Status:</span> Single</p>
+            <p><span class="highlight">Height:</span> 178 cm</p>
+            <p><span class="highlight">Weight:</span> 45 kg</p>
+            <p><span class="highlight">Citizenship:</span> Filipino</p>
+            <p><span class="highlight">Religion:</span> Iglesia ni Cristo</p>
+        </div>
+    </div>
+</body>
+</html>
